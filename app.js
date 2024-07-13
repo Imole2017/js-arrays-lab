@@ -73,7 +73,7 @@ Exercise 5: Insert an element between two others
 Complete Exercise 5 in the space below:
 */
 
-foods.splice(2, 0, 'tofu');
+foods.splice(2, 0, 'tofu'); //string 2 is index location, 0 is no items be deleted, and of course tofu
 
 console.log('Exercise 5 result:', foods);
 
