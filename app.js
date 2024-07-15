@@ -223,28 +223,30 @@ Exercise 12: FizzBuzz with arrays
 Complete Exercise 12 in the space below:
 */
 
-const fizzBuzz = () => {
+ const fizzBuzz = [];
    const fizz = [];
    const buzz = [];
-   const fizzBuzz = [];
+   const fizzbuzz = [];
 
-   for (let i = 0; i < nums.length; i++) {
-      if (nums[i] % 3 === 0) {
-         fizz.push(nums[i]);
-      } else if (nums[i] % 5 === 0) {
-         buzz.push(nums[i]);
-      } else if (nums[i] % 3 === 0 && nums[i] % 5 === 0) {
-         fizzBuzz.push(nums[i]);
+   nums.forEach(num => {
+      if (num % 3 === 0 && num % 5 === 0) {
+         fizzbuzz.push(num);
+      } else if (num % 3 === 0) {
+         fizz.push(num);
+      } else if (num % 5 === 0) {
+         buzz.push(num);
+      
       }
-   }
-}
+     
 
-
-
+   });
+   
+ 
 console.log('Exercise 12 Results:');
 console.log('  fizz:', fizz);
 console.log('  buzz:', buzz);
 console.log('  fizzbuzz:', fizzbuzz);
+
 
 
 
@@ -260,14 +262,16 @@ Exercise 13: Retrieve the Last Array
 Complete Exercise 13 in the space below:
 */
 
-// const numArrays = [
-// 	[100, 5, 23],
-// 	[15, 21, 72, 9],
-// 	[45, 66],
-// 	[7, 81, 90]
-// ];
+const numArrays = [
+	[100, 5, 23],
+	[15, 21, 72, 9],
+	[45, 66],
+	[7, 81, 90]
+];
 
-// console.log('Exercise 13 result:', numList);
+const numList = numArrays[numArrays.length -1]; //.length gives us the total number of arrays, and negative 1 gives us the index of the last array 
+
+console.log('Exercise 13 result:', numList);
 
 
 /*
@@ -281,9 +285,17 @@ Exercise 14: Accessing within nested arrays
 Complete Exercise 14 in the space below:
 */
 
+// const numArrays = [
+// 	[100, 5, 23],
+// 	[15, 21, 72, 9],
+// 	[45, 66],
+// 	[7, 81, 90]
+// ];
+
+const num = numArrays[2][1]; //[2] is the index position of the nested array, while [1] is the second element within that nested array [2], and it is index 1.
 
 
-// console.log('Exercise 14 result:', num);
+console.log('Exercise 14 result:', num);
 
 
 
